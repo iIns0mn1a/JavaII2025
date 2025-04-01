@@ -19,5 +19,8 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 ## Project Changelog
 
+### April 1st, 2025
+- finished project. 
+
 ### March 31st, 2025
 - started project, finished reading files from input file and into array list. 

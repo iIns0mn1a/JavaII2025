@@ -1,4 +1,2 @@
-Minnie MouseGrade: 98.7
-Bob BuilderGrade: 65.8
-Mickey MouseGrade: 95.1
-Popeye SailorManGrade: 78.6
+Minnie Mouse, Bob Builder, Mickey Mouse, Popeye SailorMan
+average               84.6
