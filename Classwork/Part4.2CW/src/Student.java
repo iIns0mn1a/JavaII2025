@@ -39,8 +39,23 @@ public class Student {
         {
             
             String first = input.next();
-            String last = input.next();
-            float grade = input.nextFloat();
+            String last = "";
+            float grade = 0;
+            try {
+                last = input.next();
+            }
+            
+            catch (InputMismatchException e) {
+                System.out.println("this was caught");
+            }
+            
+           
+            try {
+            grade = input.nextFloat();    
+            } catch (InputMismatchException e) {
+                System.out.println("This was also caught");
+            }
+            
 
             classroom.add(new Student(first +" " + last, grade));
         }
