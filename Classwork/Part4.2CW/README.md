@@ -21,3 +21,6 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 ### April 2nd, 2025
 - initialized project. 
+
+## Notes
+- so it will just take the first 2 sections. and all the errors will happen in the next line

@@ -35,29 +35,38 @@ public class Student {
         File f = new File(inFile);
         Scanner input = new Scanner(f);
 
-        while(input.hasNext())
+        while(input.hasNextLine())
         {
-            
-            String first = input.next();
-            String last = "";
+            String curLine = input.nextLine();
+
+            String[] inCount = curLine.split(" ");
+
+            if(inCount.length != 3)
+            {
+                System.out.printf("\"%s\" does not contain all 3 needed pieces.\n", curLine);
+            }
+// put everything else into an else
+            else
+            {
+            String name = inCount[0] + " " + inCount[1];
             float grade = 0;
             try {
-                last = input.next();
-            }
-            
-            catch (InputMismatchException e) {
-                System.out.println("this was caught");
-            }
-            
+                grade = Float.parseFloat(inCount[2]);
            
-            try {
-            grade = input.nextFloat();    
-            } catch (InputMismatchException e) {
-                System.out.println("This was also caught");
-            }
+    
+                classroom.add(new Student(name, grade));
+                
+           } catch (NumberFormatException e) {
+                // TODO: handle exception
+                System.out.printf("\"%s\" contains an invalid grade. For input string: \"%s\"\n", curLine, inCount[2]);
+                
+           }
+
             
 
-            classroom.add(new Student(first +" " + last, grade));
+           
+
+            }
         }
 
         PrintWriter pow = new PrintWriter(outFile);
