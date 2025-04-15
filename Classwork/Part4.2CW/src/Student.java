@@ -91,6 +91,7 @@ public class Student {
 
         pow.close();
         input.close();
+        sc.close();
 
     }
 }
