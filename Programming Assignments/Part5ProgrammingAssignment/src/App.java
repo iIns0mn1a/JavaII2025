@@ -1,17 +1,26 @@
+import java.util.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Input string to be reversed"); //REMEMBER TO FIX THIS FOR HACKERRRANK
+
+        String str = sc.nextLine();
+
+        System.out.println(reverseString(str,str.length()-1));
+
     }
 
-    public String reverseString(String str, int index)
+    public static String reverseString(String str, int index)
     {
-        if(index < 0)
+        if(index == 0)
         {
-            return str.substring(0, 1);
+            return str.substring(str.length()-1);
         }
         else
         {
-            return str.substring(index-1, index) + reverseString(str, index-1);
+            return str.substring(index-2, index-1) + reverseString(str, index-1);
         }
     }
 
