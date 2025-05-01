@@ -38,7 +38,7 @@ public class App extends JFrame{
     //method makes panel, that makes window content. probably can make multiple panels. (look at it like the html box model maybe?)
     public void makeWindow()
     {
-        JPanel panel = new JPanel();
+        // JPanel panel = new JPanel();
 
         distance = new JLabel("Distance");
         convDistance = new JLabel("Converted Distance");
@@ -56,26 +56,28 @@ public class App extends JFrame{
         unitGroup.add(mileUnit);
         unitGroup.add(kmUnit);
 
-        
+        setLayout(new GridLayout(5,2));
+        //in my defense, the assignment never said it had to look pretty🙃  
         
         kmConvert.addActionListener(new KmActions());
         mileConvert.addActionListener(new MileActions());
 
 
-        panel.add(distance);
-        panel.add(dist);
-        panel.add(mileUnit);
-        panel.add(kmUnit);
-        panel.add(convDistance);
-        panel.add(convDist);
-        panel.add(kmConvert);
-        panel.add(mileConvert);
-        panel.add(sameUnit);
-        panel.setBackground(Color.cyan);
+        add(distance);
+        add(dist);
+        add(mileUnit);
+        add(kmUnit);
+        add(convDistance);
+        add(convDist);
+        add(kmConvert);
+        add(mileConvert);
+        add(sameUnit);
+        getContentPane().setBackground(Color.cyan); 
+
         kmConvert.setForeground(Color.blue);
         mileConvert.setForeground(Color.blue);
 
-        add(panel);
+        
 
     }
 
