@@ -138,7 +138,12 @@ public class MainGUI extends JFrame {
         }
     }
     
-
+private JTextField firstNameField;
+private JTextField lastNameField;
+private JTextField passwordField;
+private JTextField confirmPasswordField;
+private JTextField majorField;
+private JTextField accountBalanceField;
 
     public void option2Screen()
     {
@@ -198,10 +203,21 @@ public class MainGUI extends JFrame {
         
         JButton enter = new JButton("Add Student");
         p.add(enter, BorderLayout.SOUTH);
-        
+        enter.addActionListener(new Option2Action());
         
         add(p);
         
+    }
+
+    public class Option2Action implements ActionListener
+    {
+        public void actionPerformed(ActionEvent a )
+        {
+            String email = firstNameField.getText().substring(0,1) + lastNameField.getText() +"@ctstate.edu";
+            if () {
+                
+            }
+        }
     }
     
     public void option3Screen()
