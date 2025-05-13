@@ -1,0 +1,16 @@
+Brown, Charlie, cbrown@mcc.edu, Poppins?89, 192413, NoMajor, money
+Builder, Robert, rbuilder@mcc.edu, Ball!36Hi, 109001, Full Time, Computer Science, 140.23
+Duck, Donald, dduck@mcc.edu, Kit.24TT, 109202, Part Time, 900.00 
+Riding, Red, rriding@mcc.edu, Poppins?89, 181911, NoMajor, 1198.10
+White, Snow, swhite@mcc.edu, App$100A, 110110, Professor, Computer Science
+RidingHood, Red, rridinghood@mcc.edu, Hiding^7, Instructor, Computer Science
+Duck, Blue, bduck@mcc.edu, Kit.24TT, 109208, Part Time, Networking Degree, 900.00
+111, Java I, 3
+123, Java II, 3
+Bedelia, Amelia, abedlia@mcc.edu, Kiu67q*, 101910, Professor
+Woodpecker, Woody, wwoodpecker@mcc.edu, Hello&88, Adjunct, Physics
+129, Java III
+103, Python, 3
+
+
+
