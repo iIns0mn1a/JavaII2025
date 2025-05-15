@@ -22,3 +22,16 @@ list of things to do
 - revert main gui to its last pitiful state
 - make classes for each option, each extending Jframe
 - implementation happens in each class. idk why i didn't think of that. sigh.
+
+
+
+ok thinking time
+- all options now run in their own respective classes.
+- `mainGUI` holds the uni array list. cause u know, its the main place lol.
+- when each button is called, an object of their respecive class is created. and the universal array list is sent within the constructor.
+
+now the problem is with option 1, what's our plan of attack
+- what im worried is how the universal arraylist is going to return.
+  - maybe make another method for main to call after making the option1 object?
+- i think plan of attack should be to get option 1 to work later maybe?
+- ask for help.
