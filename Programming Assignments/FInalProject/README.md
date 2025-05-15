@@ -19,4 +19,6 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 
 list of things to do 
-- make exception class for people constructors???
+- revert main gui to its last pitiful state
+- make classes for each option, each extending Jframe
+- implementation happens in each class. idk why i didn't think of that. sigh.

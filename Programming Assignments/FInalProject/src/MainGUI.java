@@ -15,32 +15,13 @@ public class MainGUI extends JFrame {
     private ArrayList<KeyRetrieval> uniArray;
 
     // private static MainProject logic = new MainProject();
-    //when opeing new screens, maybe make constructor take arguement to decide screen
-    public MainGUI(int i, ArrayList<KeyRetrieval> uni)
+  
+    public MainGUI()
     {
-        uniArray = uni;
+    
         setTitle("College Records");
         setSize(500,250);
-        
-        if(i==0)
-        {
-            mainScreen();
-        }
-        else if(i == 1)
-        {
-            option1Screen();
-        }
-        else if (i == 2) {
-            option2Screen();
-        }
-        else if(i == 3)
-        {
-            option3Screen();
-        }
-        else if (i == 4) {
-            option4Screen();
-        }
-        
+        mainScreen();    
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         setVisible(true);
@@ -70,7 +51,7 @@ public class MainGUI extends JFrame {
         buttonPanel.add(c4);
         buttonPanel.add(c5);
 
-        c1.addActionListener(new UploadOptionButton());
+       
     
 
         p.add(title, BorderLayout.NORTH);
@@ -80,13 +61,6 @@ public class MainGUI extends JFrame {
 
     }
 
-    public class UploadOptionButton implements ActionListener
-    {
-        public void actionPerformed(ActionEvent a)
-        {
-            MainGUI m1 = new MainGUI(1, uniArray) ;
-        }
-    }
 
 
 
@@ -108,7 +82,6 @@ public class MainGUI extends JFrame {
 
         mid.add(boxText);
         mid.add(inputFile);
-        enter.addActionListener(new Option1Event());
         p.add(enter, BorderLayout.SOUTH);
 
         p.add(mid, BorderLayout.CENTER);
@@ -117,33 +90,8 @@ public class MainGUI extends JFrame {
 
     }
 
-    /**
-     * nested class for option 1 button
-     */
-    public class Option1Event implements ActionListener
-    {
-        public void actionPerformed(ActionEvent a)
-        {
-            try {
-                uniArray = option1Logic(inputFile.getText());
-                
 
-            } catch (IOException e) {
-                JOptionPane.showMessageDialog(null, "File Issue: File doesn't exist.");
-            }
-            String ans = Integer.toString(uniArray.size());
-
-          
-            JOptionPane.showMessageDialog(null, uniArray);
-        }
-    }
     
-private JTextField firstNameField;
-private JTextField lastNameField;
-private JTextField passwordField;
-private JTextField confirmPasswordField;
-private JTextField majorField;
-private JTextField accountBalanceField;
 
     public void option2Screen()
     {
@@ -203,23 +151,12 @@ private JTextField accountBalanceField;
         
         JButton enter = new JButton("Add Student");
         p.add(enter, BorderLayout.SOUTH);
-        enter.addActionListener(new Option2Action());
+     
         
         add(p);
         
     }
 
-    public class Option2Action implements ActionListener
-    {
-        public void actionPerformed(ActionEvent a )
-        {
-            String email = firstNameField.getText().substring(0,1) + lastNameField.getText() +"@ctstate.edu";
-            if () {
-                
-            }
-        }
-    }
-    
     public void option3Screen()
     {
         setSize(350,150);
@@ -337,6 +274,6 @@ private JTextField accountBalanceField;
     }
 
     public static void main(String[] args) {
-        MainGUI m = new MainGUI(0, new ArrayList<>());
+        MainGUI m = new MainGUI();
     }
 }
