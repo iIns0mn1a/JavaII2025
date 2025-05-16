@@ -19,7 +19,8 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 
 
 list of things to do 
-- revert main gui to its last pitiful state
+- ...make names work correctly... sigh.
+- revert main gui to its last pitiful state DONE
 - make classes for each option, each extending Jframe
 - implementation happens in each class. idk why i didn't think of that. sigh.
 
@@ -35,3 +36,9 @@ now the problem is with option 1, what's our plan of attack
   - maybe make another method for main to call after making the option1 object?
 - i think plan of attack should be to get option 1 to work later maybe?
 - ask for help.
+
+0 is red x
+1 is blue I (informaiton) (default)
+2 is yellow caution sign
+3 is green question box
+plain_message shows no icon

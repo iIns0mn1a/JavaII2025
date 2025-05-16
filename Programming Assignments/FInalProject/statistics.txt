@@ -1,0 +1,19 @@
+Robert Builder: rbuilder@mcc.edu, 109001, FullTime, Computer Science, 140.23
+Red Riding: rriding@mcc.edu, 181911, NoMajor, None, 1198.10
+Snow White: App$100A, 110110, Professor, Computer Science
+Blue Duck: bduck@mcc.edu, 109208, PartTime, Networking Degree, 900.00
+Java I Credits: 3
+Java II Credits: 3
+Python Credits: 3
+
+Robert Builder: rbuilder@mcc.edu, 109001, FullTime, Computer Science, 140.23
+Blue Duck: bduck@mcc.edu, 109208, PartTime, Networking Degree, 900.00
+Red Riding: rriding@mcc.edu, 181911, NoMajor, None, 1198.10
+
+103, Python Credits: 3
+111, Java I Credits: 3
+123, Java II Credits: 3
+109001, Robert Builder: rbuilder@mcc.edu, 109001, FullTime, Computer Science, 140.23
+109208, Blue Duck: bduck@mcc.edu, 109208, PartTime, Networking Degree, 900.00
+110110, Snow White: App$100A, 110110, Professor, Computer Science
+181911, Red Riding: rriding@mcc.edu, 181911, NoMajor, None, 1198.10
